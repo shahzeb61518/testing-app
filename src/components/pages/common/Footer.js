@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
                 <Toolbar>
 
                     <Typography variant="h6" className={classes.title}>
-                        &copy; Shahzeb61518@gmail.com
+                        &copy; Shah zeb
           </Typography>
                 </Toolbar>
             </AppBar>

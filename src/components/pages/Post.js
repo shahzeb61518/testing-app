@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import Card from '@material-ui/core/Card';
-import { Player } from 'video-react';
 import ReactPlayer from 'react-player'
 
 import ApiManager from '../helper/ApiManager'
@@ -61,9 +60,6 @@ export default class Post extends Component {
                         postData.videoLink ?
                             <div>
                                 Video is Attached
-                                {/* <Player>
-                                    <source src="https://www.videolinktv.com/resources/videos/#kayaking.mp4" />
-                                </Player> */}
                                 <div className='player-wrapper'>
                                     <ReactPlayer
                                         className='react-player'
