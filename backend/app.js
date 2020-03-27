@@ -7,7 +7,7 @@ const MongoClient = require('mongodb').MongoClient;
 // Get routes object=> to get access to the routes
 const postRoutes = require('./routes/post-routes');
 const authRoutes = require('./routes/auth-routes');
-const app = express(); 
+const app = express();
 
 
 const url = "mongodb+srv://shahzeb:shahzeb123@cluster0-tlmv5.mongodb.net/post-data?retryWrites=true&w=majority";
@@ -23,17 +23,20 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // app.use(cors());
 // Add headers
+// res.setHeader('Access-Control-Allow-Origin', 'https://testing-app-shahzeb61518.herokuapp.com');
+// res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
   res.setHeader('Access-Control-Allow-Origin', 'https://testing-app-shahzeb61518.herokuapp.com');
-  // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
 
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
 
   // Request headers you wish to allow
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  // res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,Content-Type,Content-Length,Host,Authorization');
 
   // Set to true if you need the website to include cookies in the requests sent
   // to the API (e.g. in case you use sessions)
