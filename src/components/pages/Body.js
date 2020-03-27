@@ -129,31 +129,31 @@ export default class Main extends Component {
             <div>
                 {
                     this.state.postType === "text" ?
-                        <div
-                            style={{
-                                width: '100%',
-                                textAlign: 'start',
-                                background: '#eee',
-                                width: '7%',
-                                padding: '4px',
-                                borderRadius: '5px',
-                                textAlign: 'start',
-                                fontSize: '13px',
-                                fontWeight: '500',
-                            }}>
-                            <i className="fa fa-pencil" aria-hidden="true"></i> Text
-                </div>
-                        :
-                        <div>
+                        <div style={{ width: '100%', padding: '20px' }}>
                             <div
                                 style={{
-                                    width: '100%',
-                                    textAlign: 'start',
+                                    textAlign: 'center',
+                                    background: '#eee',
+                                    width: '7%',
+                                    padding: '4px',
+                                    marginLeft: '45%',
+                                    borderRadius: '5px',
+                                    fontSize: '13px',
+                                    fontWeight: '500',
+                                }}>
+                                <i className="fa fa-pencil" aria-hidden="true"></i> Text
+                        </div>
+                        </div>
+                        :
+                        <div style={{ width: '100%', padding: '20px' }}>
+                            <div
+                                style={{
+                                    textAlign: 'center',
                                     background: '#eee',
                                     width: '8%',
+                                    marginLeft: '45%',
                                     padding: '4px',
                                     borderRadius: '5px',
-                                    textAlign: 'start',
                                     fontSize: '13px',
                                     fontWeight: '500',
                                 }}>
@@ -168,7 +168,7 @@ export default class Main extends Component {
                         this.state.postType === "video" ?
                             <div className="input-group mb-3">
                                 <div className="input-group-prepend">
-                                    <span className="input-group-text" id="basic-addon3">Paste URL here</span>
+                                    <span className="input-group-text" id="basic-addon3">Paste video URL here</span>
                                 </div>
                                 <input
                                     required="true"
