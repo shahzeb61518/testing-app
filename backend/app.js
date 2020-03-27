@@ -22,7 +22,7 @@ mongoose.connect(url, (err, db) => {
 // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, application/json");
   next();
 });
 
