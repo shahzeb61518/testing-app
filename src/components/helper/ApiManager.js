@@ -3,7 +3,8 @@ import axios from 'axios';
 export default class ApiManager {
 
     // LocalHost
-    _BASE_URL = "http://localhost:4000/api/"
+   // _BASE_URL = "http://localhost:4000/api/"
+    _BASE_URL = "https://testing-app-backend.herokuapp.com/api/"
 
     // FEEDBACK
     _ADD_POST = "post/add"
