@@ -19,7 +19,7 @@ export default class ApiManager {
 
         if (!_headers) {
             _headers = {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             }
         }
 
