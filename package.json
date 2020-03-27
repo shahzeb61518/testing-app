@@ -36,7 +36,7 @@
     "zone.js": "~0.8.26"
   },
   "scripts": {
-    "start": "react-scripts start && node server.js",
+    "start": "react-scripts start && nodemon server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
