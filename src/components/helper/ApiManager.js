@@ -3,7 +3,7 @@ import axios from 'axios';
 export default class ApiManager {
 
     // LocalHost
-   // _BASE_URL = "http://localhost:4000/api/"
+    // _BASE_URL = "http://localhost:4000/api/"
     _BASE_URL = "https://testing-app-backend.herokuapp.com/api/"
 
     // FEEDBACK
@@ -55,7 +55,9 @@ export default class ApiManager {
         }
         if (!headers) {
             headers = {
-                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             }
         }
 
