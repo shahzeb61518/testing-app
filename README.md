@@ -6,7 +6,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-## or click on link to check live app Tetsting-App (https://testing-app-shahzeb61518.herokuapp.com/)
+### click here for live Tetsting-App (https://testing-app-shahzeb61518.herokuapp.com/)
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
