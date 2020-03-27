@@ -17,13 +17,13 @@ export default class ApiManager {
         _url = this._BASE_URL + _url;
         console.log("API _url", _url)
 
-        if (!_headers) {
-            _headers = {
-                'Access-Control-Allow-Origin': '*',
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        }
+        // if (!_headers) {
+        //     _headers = {
+        //         'Access-Control-Allow-Origin': '*',
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //     }
+        // }
 
         try {
             let response = await axios.get(_url, {
