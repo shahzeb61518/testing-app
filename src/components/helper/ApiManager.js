@@ -19,7 +19,9 @@ export default class ApiManager {
 
         if (!_headers) {
             _headers = {
-                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
             }
         }
 
